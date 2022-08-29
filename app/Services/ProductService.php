@@ -13,6 +13,9 @@ class ProductService{
         $this->productRepository = $productRepository;
     }
 
+    /**     
+     * @return \Illuminate\Http\Response
+    */
     public  function list(){
         return $this->productRepository->getAll();
     }

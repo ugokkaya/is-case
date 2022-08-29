@@ -15,6 +15,10 @@ class OrderDiscountService{
         $this->orderRepository = $orderRepository;
     }
 
+    /**     
+     * @param  int $orderId
+     * @return array
+    */
     public function discountCalculate($orderId)
     {
         $orderDiscountResp              = array();

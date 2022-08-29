@@ -16,6 +16,11 @@ class Thousand_Buy_Ten_Discount{
         $this->orderRepository = new OrderRepository();
     }
 
+    /**     
+     * @param int orderId
+     * @param int double newTotal
+     * @return array
+    */
     public function calculate($orderId, $newTotal)
     {
         $discountResponse  = array(); 

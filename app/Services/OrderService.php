@@ -14,10 +14,17 @@ class OrderService{
         $this->productRepository = $productRepository;
     }
 
+    /**     
+     * @return \Illuminate\Http\Response
+    */
     public  function list(){
         return $this->orderRepository->getAll();
     }
 
+    /**     
+     * @param \Illuminate\Http\Request  $request
+     * @return int $id
+     */
     public function store($request){
         $orderItems             = $this->getOrderItems($request);
         $orderInfo              = $this->getOrderInfo($request, $orderItems);
@@ -27,12 +34,20 @@ class OrderService{
         return $insert;
     }
 
+    /**     
+     * @param int $id
+     * @return int $id
+     */
     public function delete($id){
         $delete                 = $this->orderRepository->deleteOrder($id);
         
         return $delete;
     }
 
+     /**     
+     * @param \Illuminate\Http\Request  $request
+     * @return array
+     */
     public function getOrderItems($request){
         $orderItems = [];
         foreach($request->items as $item){
@@ -50,6 +65,10 @@ class OrderService{
         return $orderItems;
     }
 
+    /**     
+     * @param \Illuminate\Http\Request  $request, array $orderItems
+     * @return array
+     */
     public function getOrderInfo($request, $orderItems){
         $order = array(
                     'customerId' => $request->customerId,

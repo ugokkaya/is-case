@@ -17,6 +17,11 @@ class Two_Category_Six_Buy_One_Free{
 
     }
 
+    /**     
+     * @param int orderId
+     * @param int double newTotal
+     * @return array
+    */
     public function calculate($orderId, $newTotal)
     {
         $discountResponse  = array(); 
@@ -41,6 +46,10 @@ class Two_Category_Six_Buy_One_Free{
         return $discountResponse;
     }
 
+    /**     
+     * @param int orderId
+     * @return object|boolean
+    */
     public function productControl($orderId){
 
         $products = DB::table('orders as o')->select('o.total as orderTotal', 'oi.id as orderItemId', 'oi.quantity', 'oi.unitPrice')

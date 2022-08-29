@@ -13,6 +13,9 @@ class CustomerService{
         $this->customerRepository = $customerRepository;
     }
 
+    /**     
+     * @return \Illuminate\Http\Response
+    */
     public  function list(){
         return $this->customerRepository->getAll();
     }
