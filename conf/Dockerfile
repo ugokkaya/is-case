@@ -21,6 +21,4 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www
 
-RUN composer dump-autoload --optimize && composer run-script post-install-cmd
-
 EXPOSE 9000
