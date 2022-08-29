@@ -1,14 +1,30 @@
+##### Açıklamalar
+
+Laravel framework kullanılmıştır.
+
+İndirimler kısmı Enums kısmında tanımlanmıştır. Buna bağlı olarak indirim ismi ve indirim kuralının çalışacağı dosya yolu burda belirtilmiştir. Tanımlanan Enumlar Services\OrderDiscount kısmında otomatik import edilmektedir. Daha gelişmiş bir versiyon düşünülürse bu kısım veritabanına kaydırılabilir.
+
+Sipariş ekleme ve silme aşamalarından sonra stok güncellerken DB Transaction kullanılarak veri güvenliği sağlanmıştır.
+
+Ürün listesi olarak sizin reponuzda bulunan [[products.json]][products] kullanılmıştır.
+
+Müşteri listesi olarak laravel faker ile 10 adet müşteri oluşturulmaktadır.
+
+Postman collection repoya eklenmiştir. Collection içinde sample data lar mevcuttur.
+
 ##### Ayağa kaldırma
 
 `docker compose up
 `
 
-Change root user // Composer Update hata verirse
+Change root user // Windows harici composer Update hata verirse
 
 `sudo -s`
 
 `composer update
 `
+
+Docker üzerinden terminal açılırsa aşağıdaki komuta gerek yoktur.
 
 `docker container exec -it laravel-api bash
 `
@@ -18,5 +34,7 @@ Change root user // Composer Update hata verirse
 
 `php artisan db:seed`
 
-Postman collection repoya eklenmiştir.
 
+
+
+[products]: https://github.com/ugokkaya/is-case/blame/main/database/data/products.json " product.json"
