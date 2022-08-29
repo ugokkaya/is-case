@@ -9,221 +9,246 @@
 	"item": [
 		{
 			"name": "orders",
-			"request": {
-				"url": "http://localhost/api/v1/order",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
+			"description": "",
+			"item": [
+				{
+					"name": "sample",
+					"description": "",
+					"item": [
+						{
+							"name": "createOrder_Discount_1000_and_Ctg_1",
+							"request": {
+								"url": "http://localhost/api/v1/order/",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "customerId",
+											"value": "9",
+											"description": ""
+										},
+										{
+											"key": "items[0][productId]",
+											"value": "100",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "items[0][quantity]",
+											"value": "8",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "items[1][productId]",
+											"value": "101",
+											"description": ""
+										},
+										{
+											"key": "items[1][quantity]",
+											"value": "2",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "createOrder_Discount_Ctg_2",
+							"request": {
+								"url": "http://localhost/api/v1/order/",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "customerId",
+											"value": "9",
+											"description": ""
+										},
+										{
+											"key": "items[0][productId]",
+											"value": "102",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "items[0][quantity]",
+											"value": "7",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "items[1][productId]",
+											"value": "101",
+											"description": ""
+										},
+										{
+											"key": "items[1][quantity]",
+											"value": "2",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "list",
+					"request": {
+						"url": "http://localhost/api/v1/order",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"url": "http://localhost/api/v1/order/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customerId",
+									"value": "9",
+									"description": ""
+								},
+								{
+									"key": "items[0][productId]",
+									"value": "100",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "items[0][quantity]",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "items[1][productId]",
+									"value": "101",
+									"description": ""
+								},
+								{
+									"key": "items[1][quantity]",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"url": "http://localhost/api/v1/order/delete/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "orderDiscount",
+					"request": {
+						"url": "http://localhost/api/v1/discount",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "orderId",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "products",
-			"request": {
-				"url": "http://localhost/api/v1/product",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
+			"description": "",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"url": "http://localhost/api/v1/product",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "customers",
-			"request": {
-				"url": "http://localhost/api/v1/customer",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "createOrder",
-			"request": {
-				"url": "http://localhost/api/v1/order/",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
+			"description": "",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"url": "http://localhost/api/v1/customer",
+						"method": "GET",
+						"header": [],
+						"body": {},
 						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "customerId",
-							"value": "9",
-							"description": ""
-						},
-						{
-							"key": "items[0][productId]",
-							"value": "100",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "items[0][quantity]",
-							"value": "1",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "items[1][productId]",
-							"value": "101",
-							"description": ""
-						},
-						{
-							"key": "items[1][quantity]",
-							"value": "2",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "createOrder_Discount_1000_and_Ctg_1",
-			"request": {
-				"url": "http://localhost/api/v1/order/",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "customerId",
-							"value": "9",
-							"description": ""
-						},
-						{
-							"key": "items[0][productId]",
-							"value": "100",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "items[0][quantity]",
-							"value": "8",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "items[1][productId]",
-							"value": "101",
-							"description": ""
-						},
-						{
-							"key": "items[1][quantity]",
-							"value": "2",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "createOrder_Discount_Ctg_2",
-			"request": {
-				"url": "http://localhost/api/v1/order/",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "customerId",
-							"value": "9",
-							"description": ""
-						},
-						{
-							"key": "items[0][productId]",
-							"value": "102",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "items[0][quantity]",
-							"value": "7",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "items[1][productId]",
-							"value": "101",
-							"description": ""
-						},
-						{
-							"key": "items[1][quantity]",
-							"value": "2",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "deleteOrder",
-			"request": {
-				"url": "http://localhost/api/v1/order/delete/1",
-				"method": "DELETE",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "orderDiscount",
-			"request": {
-				"url": "http://localhost/api/v1/discount",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "orderId",
-							"value": "1",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"description": ""
-			},
-			"response": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
