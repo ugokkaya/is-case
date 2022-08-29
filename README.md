@@ -22,7 +22,7 @@ Postman collection repoya eklenmiştir. Collection içinde sample data lar mevcu
 
 Change root user (`sudo -s`) // Linux ve macOS için
 
-`composer install --ignore-platform-reqs
+`composer install
 `
 
 `docker compose up
