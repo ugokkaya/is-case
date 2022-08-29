@@ -2,7 +2,7 @@
 
 Laravel framework kullanılmıştır.
 
-İndirimler kısmı Enums kısmında tanımlanmıştır. Buna bağlı olarak indirim ismi ve indirim kuralının çalışacağı dosya yolu burda belirtilmiştir. Tanımlanan Enumlar Services\OrderDiscount kısmında otomatik import edilmektedir.
+İndirimler kısmı Enums kısmında tanımlanmıştır. Buna bağlı olarak indirim ismi ve indirim kuralının çalışacağı dosya yolu burda belirtilmiştir. Tanımlanan Enumlar Services\OrderDiscount kısmında otomatik import edilmektedir. Daha gelmiş bir versiyon düşünülürse bu kısım vertibanına kaydırılabilir.
 
 Sipariş ekleme ve silme aşamalarından sonra stok güncellerken DB Transaction kullanılarak veri güvenliği sağlanmıştır.
 
