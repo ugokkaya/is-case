@@ -10,7 +10,7 @@ class One_Category_Two_Buy_Cheapest_Twenty_Discount implements OrderDiscountInte
     use NumberFormat;
 
     private const LIMIT = 2;
-    private const NAME = "CATEGORY_1_BUY_6_CHEAPEST_PERCENT_20";
+    private const NAME = "CATEGORY_1_BUY_2_CHEAPEST_PERCENT_20";
     private const CATEGORY = 1;
     private const PERCENT_DISCOUNT = 20;
 
