@@ -27,12 +27,11 @@ class One_Category_Two_Buy_Cheapest_Twenty_Discount{
     
         if(!empty($orderInfo)){
             $discount         =  (($orderInfo->first()->quantity * $orderInfo->first()->unitPrice)/100) * self::PERCENT_DISCOUNT;
-            $discountAmount   =  ($orderInfo->first()->quantity *  $orderInfo->first()->unitPrice) -  $discount;
-            $subtotal         =  ($newTotal > 0 ? $newTotal : $orderInfo->first()->orderTotal) - $discountAmount ;
+            $subtotal         =  ($newTotal > 0 ? $newTotal : $orderInfo->first()->orderTotal) - $discount ;
             
             $discountResponse = array(
                                     'discountReason'    => self::NAME,
-                                    'discountAmount'    => $this->doubleFormat($discountAmount, 2),
+                                    'discountAmount'    => $this->doubleFormat($discount, 2),
                                     'subtotal'          => $this->doubleFormat($subtotal, 2),
                                 );
         }
