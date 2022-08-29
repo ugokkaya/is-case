@@ -1,14 +1,22 @@
-Ayağa kaldırma
+##### Ayağa kaldırma
 
-docker compose up
+`docker compose up
+`
 
-#Change root user -> sudo -s
-composer update
+Change root user // Composer Update hata verirse
 
-docker container exec -it laravel-api bash
+`sudo -s`
 
-php artisan migrate
+`composer update
+`
 
-php artisan db:seed
+`docker container exec -it laravel-api bash
+`
+
+`php artisan migrate
+`
+
+`php artisan db:seed`
 
 Postman collection repoya eklenmiştir.
+
