@@ -14,14 +14,18 @@ Postman collection repoya eklenmiştir. Collection içinde sample data lar mevcu
 
 ##### Ayağa kaldırma
 
-`docker compose up
+`git clone https://github.com/ugokkaya/is-case.git
 `
 
-Change root user // Windows harici composer Update hata verirse
+`cd is-case
+`
 
-`sudo -s`
+Change root user (`sudo -s`) // Linux ve macOS için
 
-`composer update
+`composer install --ignore-platform-reqs
+`
+
+`docker compose up
 `
 
 Docker üzerinden terminal açılırsa aşağıdaki komuta gerek yoktur.
