@@ -24,6 +24,8 @@ Change root user // Windows harici composer Update hata verirse
 `composer update
 `
 
+Docker üzerinden terminal açılırsa aşağıdaki komuta gerek yoktur.
+
 `docker container exec -it laravel-api bash
 `
 
