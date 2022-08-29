@@ -49,7 +49,7 @@ class Two_Category_Six_Buy_One_Free implements OrderDiscountInterface{
 
     /**     
      * @param int orderId
-     * @return object|boolean
+     * @return object
     */
     public function productControl($orderId){
 

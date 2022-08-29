@@ -47,7 +47,7 @@ class One_Category_Two_Buy_Cheapest_Twenty_Discount implements OrderDiscountInte
 
     /**     
      * @param int orderId
-     * @return object|boolean
+     * @return object|array
     */
     public function productControl($orderId){
 
@@ -64,7 +64,7 @@ class One_Category_Two_Buy_Cheapest_Twenty_Discount implements OrderDiscountInte
         {
             return $products;
         }else{
-            return 0;
+            return array();
         }
     }
 
