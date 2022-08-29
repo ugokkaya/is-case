@@ -4,8 +4,9 @@ namespace App\Services\_orderDiscount;
 
 use App\Traits\NumberFormat;
 use Illuminate\Support\Facades\DB;
+use App\Services\_orderDiscount\OrderDiscountInterface;
 
-class Two_Category_Six_Buy_One_Free{
+class Two_Category_Six_Buy_One_Free implements OrderDiscountInterface{
     use NumberFormat;
 
     private const LIMIT = 6;

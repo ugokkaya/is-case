@@ -4,8 +4,9 @@ namespace App\Services\_orderDiscount;
 
 use App\Repositories\Order\OrderRepository;
 use App\Traits\NumberFormat;
+use App\Services\_orderDiscount\OrderDiscountInterface;
 
-class Thousand_Buy_Ten_Discount{
+class Thousand_Buy_Ten_Discount implements OrderDiscountInterface{
     use NumberFormat;
 
     private const LIMIT = 1000;
