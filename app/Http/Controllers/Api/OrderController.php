@@ -42,7 +42,7 @@ class OrderController extends Controller
         $insert = $this->orderService->store($request);
 
         if($insert > 0){
-            return $this->success('success orderId -> '.$insert);
+            return $this->success('success', array('orderId' => $insert));
         }else{
             return $this->failure('error');
         }
@@ -60,7 +60,7 @@ class OrderController extends Controller
         $delete = $this->orderService->delete($id);
 
         if($delete > 0){
-            return $this->success('success');
+            return $this->success('success', array('orderId' => $id));
         }else{
             return $this->failure('error');
         }
