@@ -20,7 +20,7 @@ Postman collection repoya eklenmiştir. Collection içinde sample data lar mevcu
 `cd is-case
 `
 
-Change root user (`sudo -s`) // Linux ve macOS için
+Change root user (`sudo -s`) -> Linux ve macOS için
 
 `composer install
 `
