@@ -1,0 +1,201 @@
+{
+	"id": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+	"name": "ideasoftCase",
+	"description": "",
+	"order": [
+		"de3d552a-a07e-c73b-79c0-04eb356f9637",
+		"ff228794-6ecf-b555-4305-cba5dda8cf0d",
+		"54cb3abf-c136-9462-7ea3-5cbba3f39ee0",
+		"97e85b1e-eb78-7742-f69d-db55fc84a352",
+		"3203b8ba-11eb-4237-bc4f-e34175eed363",
+		"94eb2952-d3c9-265a-4fbb-b605b33711f4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1661591509790,
+	"owner": "9269199",
+	"public": false,
+	"requests": [
+		{
+			"id": "3203b8ba-11eb-4237-bc4f-e34175eed363",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/api/v1/order/delete/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661782097563,
+			"name": "deleteOrder",
+			"description": "",
+			"collectionId": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+			"responses": []
+		},
+		{
+			"id": "54cb3abf-c136-9462-7ea3-5cbba3f39ee0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/api/v1/customer",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661781252161,
+			"name": "customers",
+			"description": "",
+			"collectionId": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+			"responses": []
+		},
+		{
+			"id": "94eb2952-d3c9-265a-4fbb-b605b33711f4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/api/v1/discount",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "orderId",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661782111269,
+			"name": "orderDiscount",
+			"description": "",
+			"collectionId": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+			"responses": []
+		},
+		{
+			"id": "97e85b1e-eb78-7742-f69d-db55fc84a352",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/api/v1/order/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "customerId",
+					"value": "9",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "items[0][productId]",
+					"value": "100",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "items[0][quantity]",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "items[1][productId]",
+					"value": "101",
+					"description": ""
+				},
+				{
+					"key": "items[1][quantity]",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661781265514,
+			"name": "createOrder",
+			"description": "",
+			"collectionId": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+			"responses": []
+		},
+		{
+			"id": "de3d552a-a07e-c73b-79c0-04eb356f9637",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/api/v1/order",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661781259288,
+			"name": "orders",
+			"description": "",
+			"collectionId": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+			"responses": []
+		},
+		{
+			"id": "ff228794-6ecf-b555-4305-cba5dda8cf0d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/api/v1/product",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661781246014,
+			"name": "products",
+			"description": "",
+			"collectionId": "88c93ead-6a9c-a952-6ddb-0b7e5b2b2c8a",
+			"responses": []
+		}
+	]
+}
